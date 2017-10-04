@@ -11,12 +11,6 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 
-	<script src = "js/jquery-1.12.2.min.js"></script>
-	<script src = "js/materialize.min.js"></script>
-	<script src = "js/angular.min.js"></script>
-	<script src = "js/angular-route.min.js"></script>
-	<script src = "js/main.js"></script>
-
 	<script>
 		$(document).ready(function(){
 			$('.button-collapse').sideNav();
@@ -32,13 +26,40 @@
 			</div>
 			<div class="divider"></div>
 			<ul class="lateralNav">
-				<li><a href="#/" class="waves-effect waves-light inicioBtn"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a></li>
-				<div class="divider"></div>
-				<h5 id="practicaTit">Práctica:</h5>
-				<li><a href="#/video" class="ejercicio waves-effect waves-light">Video explicativo</a></li>
-				<li><a href="#/ejercicio-1" class="ejercicio waves-effect waves-light">La coma</a></li>
-				<li><a href="#/ejercicio-2" class="ejercicio waves-effect waves-light">Práctica mixta</a></li>
-				<li><a href="#/teoria" class="ejercicio waves-effect waves-light">Teoría</a></li>
+				<li class="ejercicio">
+          <a href="#/" class="waves-effect waves-light btn-flat inicioBtn">
+            <i class="fa fa-home left" aria-hidden="true"></i> 
+            Inicio
+          </a>
+        </li>
+        <div class="divider"></div>
+        
+        <h5 id="practicaTit">Práctica:</h5>
+        
+				<li class="ejercicio waves-effect waves-light">
+          <a href="#/video" class="btn-flat">
+            <i class="fa fa-play left" aria-hidden="true"></i>
+            Video explicativo
+          </a>
+        </li>
+				<li class="ejercicio waves-effect waves-light">
+          <a href="#/ejercicio-1" class="btn-flat">
+            <i class="fa fa-quote-right left" aria-hidden="true"></i>
+            La coma
+          </a>
+        </li>
+				<li class="ejercicio waves-effect waves-light">
+          <a href="#/ejercicio-2" class="btn-flat">
+            <i class="fa fa-retweet left" aria-hidden="true"></i>
+            Práctica mixta
+          </a>
+        </li>
+				<li class="ejercicio waves-effect waves-light">
+          <a href="#/teoria" class="btn-flat">
+            <i class="fa fa-question left" aria-hidden="true"></i>
+            Teoría
+          </a>
+        </li>
 			</ul>
 		</ul>
 		<div id="addFixed">
@@ -49,11 +70,13 @@
 				</div>
 			</nav>
 		</div>
-	</header>
+  </header>
+  
 	<main>
-		<div ng-view autoscroll ></div>
-	</main>
-	<footer class="page-footer">
+		<div ng-view autoscroll></div>
+  </main>
+  
+	<footer class="page-footer blue">
 		<div class="container">
 			<div class="row">
 				<div class="col l6 m6 s12">
@@ -79,6 +102,13 @@
 				<a class="grey-text text-lighten-4 right" id="socialLinks" href="https://www.facebook.com/AprendeCastellano" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
 			</div>
 		</div>
-	</footer>
+  </footer>
+  
+  <script src = "js/jquery-1.12.2.min.js"></script>
+	<script src = "js/materialize.min.js"></script>
+	<script src = "js/angular.min.js"></script>
+	<script src = "js/angular-route.min.js"></script>
+	<script src = "js/main.js"></script>
+
 </body>
 </html>

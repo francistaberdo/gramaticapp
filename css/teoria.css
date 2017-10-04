@@ -1,9 +1,15 @@
-h5{
-	font-size: 18px;
+h5 {
+  font-size: 18px;
 }
-.contenedor{
-	margin-top: 40px!important;
+
+.contenedor {
+  margin-top: 40px!important;
 }
-#titulo{
-	padding-bottom: 40px;
+
+.teoria-card {
+  min-height: 200px;
+}
+
+#titulo {
+  padding-bottom: 40px;
 }

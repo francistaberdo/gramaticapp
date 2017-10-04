@@ -1,12 +1,18 @@
-<div class="white section animated fadeIn" id="contenedorHome">
-	<div class="row">
-		<h5 class="col s12 center-align" id="titSelecEjercicio">Para comenzar, por favor seleccione el ejercicio que desea realizar:</h5>
-	</div>
-	<div class="row">
-		<div class="center-align">
-		<a href="#/video" class="col s12 m4 btn-flat" id="btHome">Video explicativo</a>
-		<a href="#/ejercicio-1" class="col s12 m4 btn-flat" id="btHome">Práctica de la coma</a>
-		<a href="#/ejercicio-2" class="col s12 m4 btn-flat" id="btHome">Práctica mixta</a>
-		</div>
-	</div>
+<div class="animated fadeIn" id="contenedorHome">
+  <div class="row">
+    <h5 class="col s12 center-align" id="titSelecEjercicio">Para comenzar, por favor seleccione el ejercicio que desea realizar:</h5>
+  </div>
+  <div class="row">
+    <div class="col s12 m4" ng-repeat="link in links">
+      <div class="card {{ link.cardColor }}">
+        <a href="{{ link.linkUrl }}" class="white-text" id="btHome">
+          <div class="card-content center-align">
+            <i class="{{ link.linkIcon }} white-text"></i>
+            <br>
+            <br> {{ link.linkName }}
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
